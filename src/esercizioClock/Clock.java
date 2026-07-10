@@ -1,10 +1,14 @@
 package esercizioClock;
 
 public class Clock { 
-	private int ore = 14; // numeri per testare il programma
-	private int minuti = 30; // numeri per testare il programma
+	private int ore;
+	private int minuti;
 	
-	
+	// Costrutto per richiamare ore e minuti da clockTest
+	public Clock(int ore, int minuti) {
+		this.ore = ore;
+		this.minuti = minuti;
+	}
 	// Metodo per calcolare il periodo
 	public void displayPartOfDay() {
 		String risultato = (ore < 0 || ore > 23 || minuti < 0 || minuti > 59) ? "Errore: orario inesistente":
