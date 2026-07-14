@@ -4,6 +4,7 @@ public class Clock {
 	private int ore;
 	private int minuti;
 	
+	
 	// Costrutto per richiamare ore e minuti da clockTest
 	public Clock(int ore, int minuti) {
 		this.ore = ore;
